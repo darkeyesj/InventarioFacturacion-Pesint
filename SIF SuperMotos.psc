@@ -248,7 +248,7 @@ Proceso SIF
 						logo;
 						Escribir menuInventario[0,0];
 						Leer respu;
-						emptyRow = buscarInventario(inventario, ""); // Se busca la ultima linea basia para no imprimir las 50 filas que hay como maximo
+						emptyRow = buscarInventario(inventario, ""); // Se busca la ultima linea vacia para no imprimir las 50 filas que hay como maximo
 						Segun respu Hacer
 							1:	
 								Escribir tituloTabla[0,0];
@@ -929,7 +929,7 @@ SubProceso agregarUsuario(arreglo, nfila)
 	FinPara
 FinSubProceso
 
-// Funcion que evalua si el usuario y contraseña son iguales en el arreglo usuarios, retornara 1 si se encontro una igualdad y 0 si no se encontro
+// Funcion que evalua si el usuario y contraseÃ±a son iguales en el arreglo usuarios, retornara 1 si se encontro una igualdad y 0 si no se encontro
 SubProceso acceso <- accesoUsuario(arreglo, usuario, password)
 	Definir i, acceso Como Entero;
 	i = 0;
